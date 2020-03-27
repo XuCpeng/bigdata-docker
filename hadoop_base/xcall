@@ -1,0 +1,13 @@
+#!/bin/bash
+pcount=$#
+if((pcount==0));then
+        echo no args;
+        exit;
+fi
+
+echo -------------localhost----------
+$@
+for((host=1; host<=3; host++)); do
+        echo ----------hadoop$host---------
+        ssh hadoop-salve$host source /etc/profile;$@
+done

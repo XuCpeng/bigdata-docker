@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  master:
+    image: hadoop:base
+    ports:
+      - "50070:50070"
+    expose: 
+      - "9864"
+
+  salve:
+    image: hadoop:base
+    container_name: datanode
+    expose: 
+      - "9864"
+    deploy: 
+      replicas: 3
