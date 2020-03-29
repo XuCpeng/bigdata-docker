@@ -21,12 +21,12 @@
   </property>
   <property>
     <name>yarn.resourcemanager.hostname</name>
-    <value>hadoop_master</value>
+    <value>hadoop-master</value>
   </property>
 
   <property>
     <name>yarn.resourcemanager.webapp.address</name>
-    <value>hadoop_master:8088</value>
+    <value>hadoop-master:8088</value>
   </property>
 
   <property>

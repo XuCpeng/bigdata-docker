@@ -18,24 +18,18 @@
 
 <configuration>
   <property>
-    <name>dfs.replication</name>
-    <value>4</value>
-    <description>Number of copies, number of backups during HDFS storage</description>
+    <name>fs.default.name</name>
+    <value>hdfs://hadoop-master:8020</value>
+    <description>Specify the default access address and port number</description>
   </property>
   <property>
-    <name>dfs.namenode.name.dir</name>
-    <value>/opt/data/hadoop/name</value>
+    <name>hadoop.tmp.dir</name>
+    <value>/opt/data/hadoop/data/</value>
+    <description>Parent directory for other temporary directories</description>
   </property>
   <property>
-    <name>dfs.datanode.data.dir</name>
-    <value>/opt/data/hadoop/data</value>
-  </property>
-  <property>
-    <name>dfs.namenode.http-address</name>
-    <value>hadoop_master:50070</value>
-  </property>
-  <property>
-    <name>dfs.permissions.enabled</name>
-    <value>false</value>
+    <name>io.file.buffer.size</name>
+    <value>131072</value>
+    <description>Buffer size used in the sequence</description>
   </property>
 </configuration>

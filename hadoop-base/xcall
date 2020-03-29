@@ -8,6 +8,6 @@ fi
 echo -------------localhost----------
 $@
 for((host=1; host<=3; host++)); do
-        echo ----------hadoop$host---------
-        ssh hadoop-salve$host source /etc/profile;$@
+        echo ----------hadoop-salve$host---------
+        ssh hadoop-salve$host "source /etc/profile;$@"
 done

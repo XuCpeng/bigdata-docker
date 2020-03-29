@@ -16,6 +16,6 @@ user=`whoami`
 
 for((host=1; host<=4; host++)); do
         #echo $pdir/$fname $user@hadoop$host:$pdir
-        echo --------------- hadoop$host ----------------
-        rsync -rvl $pdir/$fname $user@hadoop$host:$pdir
+        echo --------------- hadoop-salve$host ----------------
+        rsync -rvl $pdir/$fname $user@hadoop-salve$host:$pdir
 done
