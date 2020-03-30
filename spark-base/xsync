@@ -16,6 +16,6 @@ user=`whoami`
 
 for((host=1; host<=4; host++)); do
         #echo $pdir/$fname $user@hadoop$host:$pdir
-        echo --------------- hadoop-slave$host ----------------
-        rsync -rvl $pdir/$fname $user@hadoop-slave$host:$pdir
+        echo --------------- spark-slave$host ----------------
+        rsync -rvl $pdir/$fname $user@spark-slave$host:$pdir
 done

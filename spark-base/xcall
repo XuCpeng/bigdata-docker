@@ -8,6 +8,6 @@ fi
 echo -------------localhost----------
 $@
 for((host=1; host<=3; host++)); do
-        echo ----------hadoop-slave$host---------
-        ssh hadoop-slave$host "source /etc/profile;$@"
+        echo ----------spark-slave$host---------
+        ssh spark-slave$host "source /etc/profile;$@"
 done

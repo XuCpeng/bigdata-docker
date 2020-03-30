@@ -5,28 +5,21 @@ services:
     container_name: hadoop-master
     restart: always
     ports:
-      - 9870:9870
-      - 9000:9000
-      - 8080:8080
-      - 4040:4040
-      - 4000:4000
-      - 7077:7077
       - 50070:50070
       - 8020:8020
-  
-  hadoop_salve1:
-    build: ../hadoop-base/
-    container_name: hadoop-salve1
-    restart: always
-    
 
-
-  hadoop_salve2:
+  hadoop-slave1:
     build: ../hadoop-base/
-    container_name: hadoop-salve2
+    container_name: hadoop-slave1
     restart: always
 
-  hadoop_salve3:
+  hadoop-slave2:
     build: ../hadoop-base/
-    container_name: hadoop-salve3
+    container_name: hadoop-slave2
     restart: always
+
+  hadoop-slave3:
+    build: ../hadoop-base/
+    container_name: hadoop-slave3
+    restart: always
+
