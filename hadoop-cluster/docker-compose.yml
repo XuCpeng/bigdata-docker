@@ -7,6 +7,7 @@ services:
     ports:
       - 50070:50070
       - 8020:8020
+    command: /usr/sbin/sshd -D && /opt/hadoop-3.2.1/sbin/start-all.sh
 
   hadoop-slave1:
     build: ../hadoop-base/

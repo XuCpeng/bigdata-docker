@@ -1,2 +1,6 @@
 data/
 Downloads/
+spark-base/jdk-8u241-linux-x64.tar.gz
+spark-base/spark-3.0.0-preview2-bin-hadoop3.2.tgz
+hadoop-base/jdk-8u241-linux-x64.tar.gz
+hadoop-base/hadoop-3.2.1.tar.gz
