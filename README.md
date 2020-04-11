@@ -51,3 +51,10 @@ Creating spark-master  ... done
 
 - spark、hadoop和jdk均在`/opt`目录下
 - hdfs的数据文件在`/opt/data`目录下
+
+## 其他说明
+
+- jdk、spark、hadoop均为在线下载，可在`hadoop-base/Dockerfile`和`spark-base/Dockerfile`中更改下载链接。
+- apt软件源更改为了清华源，如果不需要更改请删除`hadoop-base/Dockerfile`和`spark-base/Dockerfile`中的`COPY sources.list /etc/apt/`语句。
+- 支持`xcall`命令，在`hadoop-master`中运行`xcall commend`，`commend`将在hadoop-master和hadoop-slave上运行。例如`xcall jps`。
+
