@@ -2,10 +2,10 @@
 
 /usr/sbin/sshd
 
-cd /opt/hadoop-3.2.1/bin
+cd /opt/hadoop/bin
 ./hdfs namenode -format
 
-cd /opt/hadoop-3.2.1/sbin/
+cd /opt/hadoop/sbin/
 ./start-all.sh
 
 tail -f /dev/null
