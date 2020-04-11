@@ -33,7 +33,6 @@ Successfully tagged spark-cluster_spark-master:latest
 Creating hadoop-slave1 ... done
 Creating hadoop-slave2 ... done
 Creating hadoop-slave3 ... done
-
 Creating spark-slave2  ... done
 Creating spark-slave1  ... done
 
