@@ -43,8 +43,8 @@ Creating spark-master  ... done
 
 #### 默认端口
 
-- Spark web: http://localhost:8080/
-- hadoop web: http://localhost:50070/
+- Spark web: <http://localhost:8080/>
+- hadoop web: <http://localhost:50070/>
 - Spark Master at spark://spark-master:7077  已映射到 localhost:7077
 - hdfs://hadoop-master:8020  已映射到 localhost:8020
 
