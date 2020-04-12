@@ -28,6 +28,18 @@ docker-compose -f "spark-cluster\docker-compose.yml" up -d --build
 
 #### 容器结构
 
+hadoop-cluster:
+
+```bash
+Successfully tagged hadoop-cluster_hadoop-slave3:latest
+Creating hadoop-master ... done
+Creating hadoop-slave1 ... done
+Creating hadoop-slave2 ... done
+Creating hadoop-slave3 ... done
+```
+
+spark-cluster:
+
 ```bash
 Successfully tagged spark-cluster_spark-master:latest
 Creating hadoop-slave1 ... done
