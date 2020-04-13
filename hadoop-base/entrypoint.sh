@@ -8,4 +8,8 @@ cd /opt/hadoop/bin
 cd /opt/hadoop/sbin/
 ./start-all.sh
 
+cd /opt/hadoop/bin
+./hadoop fs -mkdir /spark-history
+
+
 tail -f /dev/null

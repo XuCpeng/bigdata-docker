@@ -8,6 +8,7 @@ services:
       - 4000:4000
       - 8080:8080
       - 7077:7077
+      - 18080:18080
     depends_on: 
       - hadoop-master
       - spark-slave1

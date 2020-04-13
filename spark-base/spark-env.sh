@@ -74,6 +74,4 @@
 SPARK_MASTER_HOST=spark-master
 SPARK_MASTER_PORT=7077
 
-export SPARK_HISTORY_OPTS="-Dspark.history.ui.port=7077
--Dspark.history.retainedApplications=3
--Dspark.history.fs.logDirectory=hdfs://hadoop-master:8020/spark-history"
+export SPARK_HISTORY_OPTS="-Dspark.history.ui.port=18080 -Dspark.history.retainedApplications=3 -Dspark.history.fs.logDirectory=hdfs://hadoop-master:8020/spark-history "

@@ -1,6 +1,5 @@
 FROM ubuntu:18.04
 
-COPY entrypoint.sh xcall xsync /usr/local/bin/
 COPY sources.list /etc/apt/
 RUN mkdir /var/run/sshd \
     && apt update && apt install -y ssh rsync curl \
@@ -33,4 +32,5 @@ RUN echo "export JAVA_HOME=/opt/jdk" >> /etc/profile.d/jdk_env.sh  \
     && echo "export PATH=\$PATH:\$HADOOP_HOME/bin:\$HADOOP_HOME/sbin" >> /etc/bash.bashrc \
     && echo "export JAVA_HOME=/opt/jdk" >> /opt/hadoop/etc/hadoop/hadoop-env.sh
 
+COPY entrypoint.sh xcall xsync /usr/local/bin/
 CMD ["/usr/sbin/sshd", "-D"]
