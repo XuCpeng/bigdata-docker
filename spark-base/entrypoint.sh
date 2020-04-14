@@ -3,7 +3,7 @@
 cd /opt/spark/sbin
 ./start-all.sh
 
-sleep 20
+sleep 30
 ./start-history-server.sh
 
 /usr/sbin/sshd -D
